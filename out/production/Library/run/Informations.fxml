@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="508.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="run.Informations">
+   <children>
+      <ImageView fitHeight="339.0" fitWidth="716.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@mainpagebg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="465.0" fitWidth="700.0" layoutX="1.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@mainpagebg.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtWelcome" alignment="CENTER_RIGHT" editable="false" layoutX="204.0" layoutY="28.0" prefHeight="35.0" prefWidth="293.0" style="-fx-background-color: #ffff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-style: solid;               -fx-border-width: 2; -fx-border-color: #719d7c;" text="پنل نمایش اطلاعات کابخانه علامه مجلسی">
+         <font>
+            <Font name="Georgia Bold" size="16.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="35.0" fitWidth="31.0" layoutX="495.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="31.0" layoutX="186.0" layoutY="28.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+
+      <TextField fx:id="txtMembersList" alignment="CENTER_RIGHT" editable="false" layoutX="537.0" layoutY="72.0" onMouseClicked="#selectTxtMembersList" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: #ffff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-style: solid;               -fx-border-width: 2; -fx-border-color: #719d7c;" text="لیست اعضا">
+         <font>
+            <Font name="Georgia Bold" size="16.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="35.0" fitWidth="31.0" layoutX="640.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="31.0" layoutX="519.0" layoutY="73.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtBooksList" alignment="CENTER_RIGHT" editable="false" layoutX="73.0" layoutY="73.0" onMouseClicked="#selectTxtBooksList" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: #ffff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-style: solid;               -fx-border-width: 2; -fx-border-color: #719d7c;" text="لیست کتاب ها">
+         <font>
+            <Font name="Georgia Bold" size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="35.0" fitWidth="31.0" layoutX="176.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="31.0" layoutX="55.0" layoutY="74.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnExit" layoutX="38.0" layoutY="475.0" mnemonicParsing="false" onAction="#pressBtnExit" prefHeight="35.0" prefWidth="74.0" text="خروج">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ListView fx:id="lvMembers" layoutX="26.0" layoutY="116.0" prefHeight="352.0" prefWidth="647.0" visible="false" />
+      <ListView fx:id="lvBooks" layoutX="22.0" layoutY="116.0" prefHeight="352.0" prefWidth="647.0" style="-fx-background-color: #719d7c; -fx-background-radius: 15;" visible="false" />
+   </children>
+</AnchorPane>

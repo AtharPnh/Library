@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="298.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="run.BookRegisteration">
+
+    <children>
+        <ImageView fitHeight="298.0" fitWidth="447.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@mainpagebg.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="298.0" fitWidth="447.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@mainpagebg.jpg" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="26.0" layoutY="21.0" prefHeight="372.0" prefWidth="396.0" style="-fx-background-color: #ffff; -fx-border-style: solid; -fx-border-color: #719d7c; -fx-border-width: 2;">
+            <children>
+                <Label fx:id="lblregistration" alignment="CENTER" layoutX="124.0" layoutY="14.0" prefHeight="27.0" prefWidth="149.0" text="فرم ثبت کتاب">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtAuthor" alignment="TOP_RIGHT" layoutX="29.0" layoutY="73.0" prefHeight="36.0" prefWidth="149.0" promptText="نویسنده" style="-fx-border-style: solid; -fx-border-color: #719d7c; -fx-border-radius: 3; -fx-background-color: #e8e8e8;">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtTitle" alignment="TOP_RIGHT" layoutX="225.0" layoutY="73.0" prefHeight="36.0" prefWidth="149.0" promptText="عنوان کتاب" style="-fx-border-style: solid; -fx-border-color: #719d7c; -fx-border-radius: 3; -fx-background-color: #e8e8e8;">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtID" alignment="TOP_RIGHT" layoutX="225.0" layoutY="140.0" prefHeight="36.0" prefWidth="149.0" promptText="کد کتاب" style="-fx-border-style: solid; -fx-border-color: #719d7c; -fx-border-radius: 3; -fx-background-color: #e8e8e8;">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtSubject" alignment="TOP_RIGHT" layoutX="29.0" layoutY="140.0" prefHeight="36.0" prefWidth="149.0" promptText="موضوع کتاب" style="-fx-border-style: solid; -fx-border-color: #719d7c; -fx-border-radius: 3; -fx-background-color: #e8e8e8;">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="txtPublisher" alignment="TOP_RIGHT" layoutX="225.0" layoutY="206.0" prefHeight="36.0" prefWidth="149.0" promptText="ناشر" style="-fx-border-style: solid; -fx-border-color: #719d7c; -fx-border-radius: 3; -fx-background-color: #e8e8e8;">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="btnDone" layoutX="86.0" layoutY="329.0" mnemonicParsing="false" onAction="#pressDone" prefHeight="27.0" prefWidth="58.0" text="ثبت" />
+            <TextField fx:id="txtPages" alignment="TOP_RIGHT" layoutX="29.0" layoutY="206.0" prefHeight="36.0" prefWidth="149.0" promptText="تعداد صفحات" style="-fx-border-style: solid; -fx-border-color: #719d7c; -fx-border-radius: 3; -fx-background-color: #e8e8e8;">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtYear" alignment="TOP_RIGHT" layoutX="124.0" layoutY="267.0" prefHeight="36.0" prefWidth="149.0" promptText="سال انتشار" style="-fx-border-style: solid; -fx-border-color: #719d7c; -fx-border-radius: 3; -fx-background-color: #e8e8e8;">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnVerify" layoutX="260.0" layoutY="329.0" mnemonicParsing="false" onAction="#pressVerify" prefHeight="27.0" prefWidth="58.0" text="تایید" />
+            </children>
+        </AnchorPane>
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="290.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="run.MemberPage">
+   <children>
+      <ImageView fitHeight="302.0" fitWidth="623.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@mainpagebg.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblUserName" alignment="CENTER_RIGHT" layoutX="502.0" layoutY="29.0" prefHeight="24.0" prefWidth="84.0" text="نام کاربر">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPanel" alignment="CENTER" layoutX="250.0" layoutY="10.0" prefHeight="24.0" prefWidth="123.0" text="پنل کاربری عضو">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLeadingList" layoutX="443.0" layoutY="83.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="143.0" style="-fx-background-color: #ffff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-style: solid;               -fx-border-width: 2; -fx-border-color: #719d7c;" text="لیست امانت های من">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="584.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="428.0" layoutY="87.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnBooks" layoutX="242.0" layoutY="82.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="143.0" style="-fx-background-color: #ffff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-style: solid; -fx-border-width: 2; -fx-border-color: #719d7c;" text="کتاب های موجود">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="383.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="227.0" layoutY="86.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnEditProfile" layoutX="30.0" layoutY="81.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="143.0" style="-fx-background-color: #ffff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-style: solid; -fx-border-width: 2; -fx-border-color: #719d7c;" text="ویرایش پروفایل">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="171.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="15.0" layoutY="85.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnExit" layoutX="39.0" layoutY="29.0" mnemonicParsing="false" onAction="#pressBtnExit" prefHeight="30.0" prefWidth="101.0" text="خروج از حساب" textFill="#42754e">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

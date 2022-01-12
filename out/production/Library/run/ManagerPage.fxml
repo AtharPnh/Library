@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="290.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="run.ManagerPage">
+   <children>
+      <ImageView fitHeight="302.0" fitWidth="623.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@mainpagebg.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblName" alignment="CENTER_RIGHT" layoutX="502.0" layoutY="29.0" prefHeight="24.0" prefWidth="84.0" text="نام کاربر">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPanel" alignment="CENTER" layoutX="250.0" layoutY="10.0" prefHeight="24.0" prefWidth="123.0" text="پنل کاربری مدیر">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBookList" layoutX="443.0" layoutY="83.0" mnemonicParsing="false" onAction="#pressBtnBookList" prefHeight="36.0" prefWidth="143.0" style="-fx-background-color: #ffff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-style: solid;               -fx-border-width: 2; -fx-border-color: #719d7c;" text="لیست کتاب ها">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="584.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="428.0" layoutY="87.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnMembersList" layoutX="242.0" layoutY="82.0" mnemonicParsing="false" onAction="#pressBtnMembersList" prefHeight="36.0" prefWidth="143.0" style="-fx-background-color: #ffff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-style: solid; -fx-border-width: 2; -fx-border-color: #719d7c;" text="لیست اعضا">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="383.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="227.0" layoutY="86.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnDeleteBook" layoutX="443.0" layoutY="141.0" mnemonicParsing="false" onAction="#pressBtnDeleteBook" prefHeight="36.0" prefWidth="143.0" style="-fx-background-color: #ffff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-style: solid; -fx-border-width: 2; -fx-border-color: #719d7c;" text="حذف کتاب">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="584.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="428.0" layoutY="145.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAddBook" layoutX="242.0" layoutY="142.0" mnemonicParsing="false" onAction="#pressBtnAddBook" prefHeight="36.0" prefWidth="143.0" style="-fx-background-color: #ffff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-style: solid; -fx-border-width: 2; -fx-border-color: #719d7c;" text="اضافه کردن کتاب">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="383.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="227.0" layoutY="146.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnEditBook" layoutX="45.0" layoutY="142.0" mnemonicParsing="false" onAction="#pressBtnEditBook" prefHeight="36.0" prefWidth="143.0" style="-fx-background-color: #ffff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-style: solid; -fx-border-width: 2; -fx-border-color: #719d7c;" text="ویرایش کتاب">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="186.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="30.0" layoutY="146.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnDeleteMember" layoutX="443.0" layoutY="207.0" mnemonicParsing="false" onAction="#pressBtnDeleteMember" prefHeight="36.0" prefWidth="143.0" style="-fx-background-color: #ffff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-style: solid; -fx-border-width: 2; -fx-border-color: #719d7c;" text="حذف عضو">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="584.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="428.0" layoutY="211.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAddMember" layoutX="242.0" layoutY="207.0" mnemonicParsing="false" onAction="#pressBtnAddMember" prefHeight="36.0" prefWidth="143.0" style="-fx-background-color: #ffff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-style: solid; -fx-border-width: 2; -fx-border-color: #719d7c;" text="اضافه کردن عضو">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="383.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="227.0" layoutY="211.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnEditMember" layoutX="45.0" layoutY="208.0" mnemonicParsing="false" onAction="#pressBtnEditMember" prefHeight="36.0" prefWidth="143.0" style="-fx-background-color: #ffff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-style: solid; -fx-border-width: 2; -fx-border-color: #719d7c;" text="ویرایش عضو">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="186.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="18.0" layoutX="30.0" layoutY="212.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@flower.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnExit" layoutX="30.0" layoutY="34.0" mnemonicParsing="false" onAction="#pressBtnExit" prefHeight="30.0" prefWidth="101.0" text="خروج از حساب" textFill="#42754e">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

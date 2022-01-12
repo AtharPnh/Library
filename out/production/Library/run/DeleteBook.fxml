@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="232.0" prefWidth="417.0" style="-fx-background-color: #ffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="run.DeleteBook">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="155.0" layoutY="20.0" prefHeight="25.0" prefWidth="108.0" text="حذف کتاب">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="281.0" layoutY="89.0" prefHeight="25.0" prefWidth="122.0" text="نام کتاب را وارد کنید :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" alignment="CENTER_RIGHT" layoutX="38.0" layoutY="82.0" prefHeight="38.0" prefWidth="219.0" promptText="نام کتاب" style="-fx-background-color: #1111; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-style: solid; -fx-border-width: 2; -fx-border-color: #719d7c;" />
+      <Button fx:id="btnDelete" layoutX="41.0" layoutY="167.0" mnemonicParsing="false" onAction="#pressBtnDelete" prefHeight="31.0" prefWidth="78.0" text="حذف" textFill="#396b44">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="314.0" layoutY="167.0" mnemonicParsing="false" onAction="#pressBtnBack" prefHeight="31.0" prefWidth="78.0" text="بازگشت" textFill="#396b44">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
